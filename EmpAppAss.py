@@ -149,7 +149,7 @@ def back2():
 
 # download file
 @app.route('/download/<string:id>', methods=['GET', 'POST'])
- def download(id):
+def download(id):
     key = f"emp-id-{id}_image_file"
 
     s3_resource = boto3.resource('s3')
